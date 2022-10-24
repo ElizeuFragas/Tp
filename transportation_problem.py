@@ -131,8 +131,7 @@ def loop_pivoting(bfs, loop):
     return new_bfs
 
 def transportation_simplex_method(supply, demand, costs):
-    if sum(demand) > sum(supply):
-        return None
+    
     balanced_supply, balanced_demand, balanced_costs = get_balanced_tp(
         supply, demand, costs
     )
