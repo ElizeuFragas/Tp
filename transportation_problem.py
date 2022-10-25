@@ -145,7 +145,7 @@ def transportation_simplex_method(supply, demand, costs):
         return bfs
     
     basic_variables = inner(north_west_corner(balanced_supply, balanced_demand))
-    solution = np.zeros((len(costs), len(costs[0])))
+    solution = np.zeros((len(balanced_costs), len(balanced_costs[0])))
     for (i, j), v in basic_variables:
         solution[i][j] = v
 
